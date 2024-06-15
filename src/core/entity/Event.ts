@@ -1,23 +1,23 @@
 import { randomUUID } from "node:crypto";
 
-export class Event {
+export class Event  {
   private id: string;
   private name: string;
-  private data: string;
+  private date: string;
   private talks: string[];
   private dist: string[];
   private local: string;
 
   constructor(
     name: string,
-    data: string,
+    date: string,
     talks: string[],
     dist: string[],
     local: string
   ) {
     this.id = randomUUID();
     this.name = name;
-    this.data = data;
+    this.date = date;
     this.talks = talks;
     this.dist = dist;
     this.local = local;
